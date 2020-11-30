@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A4D189042574FAFE00B4CD6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D189032574FAFE00B4CD6C /* AppDelegate.swift */; };
 		A4D189062574FAFE00B4CD6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D189052574FAFE00B4CD6C /* SceneDelegate.swift */; };
-		A4D189082574FAFE00B4CD6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D189072574FAFE00B4CD6C /* ContentView.swift */; };
 		A4D1890A2574FAFE00B4CD6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D189092574FAFE00B4CD6C /* Assets.xcassets */; };
 		A4D1890D2574FAFE00B4CD6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D1890C2574FAFE00B4CD6C /* Preview Assets.xcassets */; };
 		A4D189102574FAFE00B4CD6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D1890E2574FAFE00B4CD6C /* LaunchScreen.storyboard */; };
@@ -19,13 +18,14 @@
 		A4D189272575184D00B4CD6C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D189262575184D00B4CD6C /* Account.swift */; };
 		A4D1892B257518DB00B4CD6C /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1892A257518DB00B4CD6C /* AccountService.swift */; };
 		A4D1892E25751DE400B4CD6C /* AccountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1892D25751DE400B4CD6C /* AccountSummaryViewModel.swift */; };
+		A4D1893125751FA300B4CD6C /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1893025751FA300B4CD6C /* AccountSummaryScreen.swift */; };
+		A4D189352575213E00B4CD6C /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D189342575213E00B4CD6C /* AccountListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4D189002574FAFE00B4CD6C /* FinancialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D189032574FAFE00B4CD6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4D189052574FAFE00B4CD6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4D189072574FAFE00B4CD6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A4D189092574FAFE00B4CD6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4D1890C2574FAFE00B4CD6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4D1890F2574FAFE00B4CD6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +37,8 @@
 		A4D189262575184D00B4CD6C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		A4D1892A257518DB00B4CD6C /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		A4D1892D25751DE400B4CD6C /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
+		A4D1893025751FA300B4CD6C /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
+		A4D189342575213E00B4CD6C /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,6 @@
 				A4D189192575175300B4CD6C /* Extensions */,
 				A4D189032574FAFE00B4CD6C /* AppDelegate.swift */,
 				A4D189052574FAFE00B4CD6C /* SceneDelegate.swift */,
-				A4D189072574FAFE00B4CD6C /* ContentView.swift */,
 				A4D189092574FAFE00B4CD6C /* Assets.xcassets */,
 				A4D1890E2574FAFE00B4CD6C /* LaunchScreen.storyboard */,
 				A4D189112574FAFE00B4CD6C /* Info.plist */,
@@ -108,6 +109,7 @@
 		A4D189212575178A00B4CD6C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A4D1893025751FA300B4CD6C /* AccountSummaryScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -131,6 +133,7 @@
 		A4D18924257517A800B4CD6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A4D189342575213E00B4CD6C /* AccountListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,9 +218,10 @@
 			files = (
 				A4D189042574FAFE00B4CD6C /* AppDelegate.swift in Sources */,
 				A4D1891F2575175B00B4CD6C /* URL+Extensions.swift in Sources */,
+				A4D1893125751FA300B4CD6C /* AccountSummaryScreen.swift in Sources */,
 				A4D189062574FAFE00B4CD6C /* SceneDelegate.swift in Sources */,
+				A4D189352575213E00B4CD6C /* AccountListView.swift in Sources */,
 				A4D1891D2575175B00B4CD6C /* View+Extensions.swift in Sources */,
-				A4D189082574FAFE00B4CD6C /* ContentView.swift in Sources */,
 				A4D1892E25751DE400B4CD6C /* AccountSummaryViewModel.swift in Sources */,
 				A4D1892B257518DB00B4CD6C /* AccountService.swift in Sources */,
 				A4D1891E2575175B00B4CD6C /* Double+Extensions.swift in Sources */,

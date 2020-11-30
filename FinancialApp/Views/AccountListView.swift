@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct AccountListView: View {
+    let accounts: [AccountViewModel]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct AccountListView_Previews: PreviewProvider {
-    static var previews: some View {
-        AccountListView()
+        List(accounts, id: \.accountId) { account in
+            HStack {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(account.name)
+                        .font(.headline)
+                    
+                    Text(account.accountType)
+                        .opacity(0.5)
+                } //: VSTACK
+                Spacer()
+                Text("\(account.balance.formatAsCurrency())")
+                    .foregroundColor(.green)
+            } //: HSTACK
+        } //: LIST
     }
 }
