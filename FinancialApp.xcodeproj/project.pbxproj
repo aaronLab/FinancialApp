@@ -13,6 +13,9 @@
 		A4D1890A2574FAFE00B4CD6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D189092574FAFE00B4CD6C /* Assets.xcassets */; };
 		A4D1890D2574FAFE00B4CD6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D1890C2574FAFE00B4CD6C /* Preview Assets.xcassets */; };
 		A4D189102574FAFE00B4CD6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D1890E2574FAFE00B4CD6C /* LaunchScreen.storyboard */; };
+		A4D1891D2575175B00B4CD6C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1891A2575175B00B4CD6C /* View+Extensions.swift */; };
+		A4D1891E2575175B00B4CD6C /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1891B2575175B00B4CD6C /* Double+Extensions.swift */; };
+		A4D1891F2575175B00B4CD6C /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1891C2575175B00B4CD6C /* URL+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		A4D1890F2574FAFE00B4CD6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4D189112574FAFE00B4CD6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4D189182574FB6800B4CD6C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A4D1891A2575175B00B4CD6C /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		A4D1891B2575175B00B4CD6C /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		A4D1891C2575175B00B4CD6C /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,11 @@
 		A4D189022574FAFE00B4CD6C /* FinancialApp */ = {
 			isa = PBXGroup;
 			children = (
+				A4D189232575179D00B4CD6C /* ViewModels */,
+				A4D189222575179600B4CD6C /* Models */,
+				A4D189212575178A00B4CD6C /* Screens */,
+				A4D18924257517A800B4CD6C /* Views */,
+				A4D189192575175300B4CD6C /* Extensions */,
 				A4D189032574FAFE00B4CD6C /* AppDelegate.swift */,
 				A4D189052574FAFE00B4CD6C /* SceneDelegate.swift */,
 				A4D189072574FAFE00B4CD6C /* ContentView.swift */,
@@ -75,6 +86,44 @@
 				A4D1890C2574FAFE00B4CD6C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A4D189192575175300B4CD6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4D1891B2575175B00B4CD6C /* Double+Extensions.swift */,
+				A4D1891C2575175B00B4CD6C /* URL+Extensions.swift */,
+				A4D1891A2575175B00B4CD6C /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4D189212575178A00B4CD6C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A4D189222575179600B4CD6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4D189232575179D00B4CD6C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4D18924257517A800B4CD6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +197,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D189042574FAFE00B4CD6C /* AppDelegate.swift in Sources */,
+				A4D1891F2575175B00B4CD6C /* URL+Extensions.swift in Sources */,
 				A4D189062574FAFE00B4CD6C /* SceneDelegate.swift in Sources */,
+				A4D1891D2575175B00B4CD6C /* View+Extensions.swift in Sources */,
 				A4D189082574FAFE00B4CD6C /* ContentView.swift in Sources */,
+				A4D1891E2575175B00B4CD6C /* Double+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
