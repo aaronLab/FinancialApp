@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct AccountSummaryScreen: View {
+    
+    @ObservedObject private var viewModel = AccountSummaryViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            AccountListView(accounts: viewModel.accounts)
+            
+            HStack {
+                Text("Total: ")
+                Spacer()
+                Text("\(viewModel.total.formatAsCurrency())")
+                    .foregroundColor(.green)
+            }
+            .padding()
+            
+        } //: VSTACK
+        .onAppear {
+            self.viewModel.getAllAccounts()
+        } //: ONAPPEAR
     }
 }
 
